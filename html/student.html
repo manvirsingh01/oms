@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Page</title>
+    <link rel="stylesheet" href="/css/student.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="left">Student Name</div>
+        <div class="right">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="emergency_contact.html">Emergency Contact</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Out Time</th>
+                        <th>In Time</th>
+                        <th>Security Present</th>
+                        <th>Approved By</th>
+                        <th>Reason</th>
+                        <th>Remark</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-10-01</td>
+                        <td>10:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>Yes</td>
+                        <td>Mr. Smith</td>
+                        <td>Medical Appointment</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>2023-10-02</td>
+                        <td>11:00 AM</td>
+                        <td>03:00 PM</td>
+                        <td>No</td>
+                        <td>Mrs. Johnson</td>
+                        <td>Family Visit</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>2023-10-03</td>
+                        <td>09:00 AM</td>
+                        <td>01:00 PM</td>
+                        <td>Yes</td>
+                        <td>Mr. Brown</td>
+                        <td>Personal Errand</td>
+                        <td>None</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <button onclick="toggleForm('outpassForm')">Request New Outpass</button>
+            <form id="outpassForm" style="display:none;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br>
+                <label for="rollno">Roll No:</label>
+                <input type="text" id="rollno" name="rollno"><br>
+                <label for="phone">Phone No:</label>
+                <input type="text" id="phone" name="phone"><br>
+                <label for="parentPhone">Parent's Phone No:</label>
+                <input type="text" id="parentPhone" name="parentPhone"><br>
+                <label for="reason">Reason:</label>
+                <input type="text" id="reason" name="reason"><br>
+                <label for="dateOut">Date Out:</label>
+                <input type="date" id="dateOut" name="dateOut"><br>
+                <label for="dateIn">Date In:</label>
+                <input type="date" id="dateIn" name="dateIn"><br>
+                <label for="outTime">Out Time:</label>
+                <input type="time" id="outTime" name="outTime"><br>
+                <label for="inTime">In Time:</label>
+                <input type="time" id="inTime" name="inTime"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section>
+            <button onclick="toggleForm('editProfileForm')">Edit Profile</button>
+            <form id="editProfileForm" style="display:none;">
+                <label for="editName">Name:</label>
+                <input type="text" id="editName" name="editName"><br>
+                <label for="editRollno">Roll No:</label>
+                <input type="text" id="editRollno" name="editRollno"><br>
+                <label for="editPhone">Phone No:</label>
+                <input type="text" id="editPhone" name="editPhone"><br>
+                <label for="editParentPhone">Parent's Phone No:</label>
+                <input type="text" id="editParentPhone" name="editParentPhone"><br>
+                <label for="editSemester">Semester Number:</label>
+                <input type="text" id="editSemester" name="editSemester"><br>
+                <label for="editCourse">Course Name:</label>
+                <input type="text" id="editCourse" name="editCourse"><br>
+                <input type="submit" value="Save Changes">
+            </form>
+        </section>
+        <section>
+            <h2>Status</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Out Time</th>
+                        <th>In Time</th>
+                        <th>Security Present</th>
+                        <th>Approved By</th>
+                        <th>Reason</th>
+                        <th>Remark</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-10-01</td>
+                        <td>10:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>Yes</td>
+                        <td>Mr. Smith</td>
+                        <td>Medical Appointment</td>
+                        <td>None</td>
+                        <td>Approved</td>
+                    </tr>
+                    <tr>
+                        <td>2023-10-02</td>
+                        <td>11:00 AM</td>
+                        <td>03:00 PM</td>
+                        <td>No</td>
+                        <td>Mrs. Johnson</td>
+                        <td>Family Visit</td>
+                        <td>None</td>
+                        <td>Declined</td>
+                    </tr>
+                    <tr>
+                        <td>2023-10-03</td>
+                        <td>09:00 AM</td>
+                        <td>01:00 PM</td>
+                        <td>Yes</td>
+                        <td>Mr. Brown</td>
+                        <td>Personal Errand</td>
+                        <td>None</td>
+                        <td>Approved</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Outpass Management System
+    </footer>
+    <script src="/js/student.js"></script>
+</body>
+</html>

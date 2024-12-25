@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Page</title>
+    <link rel="stylesheet" href="/css/security.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="left">Security Dashboard</div>
+        <div class="right">
+            <a href="dashboard.html">Dashboard</a>
+            <a href="logout.html">Logout</a>
+        </div>
+    </header>
+    <main>
+        <section>
+            <h2>Outpass Requests</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Out Time</th>
+                        <th>In Time</th>
+                        <th>Security Present</th>
+                        <th>Approved By</th>
+                        <th>Reason</th>
+                        <th>Remark</th>
+                        <th>Security Out</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2023-10-01</td>
+                        <td>10:00 AM</td>
+                        <td>02:00 PM</td>
+                        <td>Yes</td>
+                        <td>Mr. Smith</td>
+                        <td>Medical Appointment</td>
+                        <td>None</td>
+                        <td><input type="checkbox" name="securityOut1"></td>
+                    </tr>
+                    <tr>
+                        <td>2023-10-02</td>
+                        <td>11:00 AM</td>
+                        <td>03:00 PM</td>
+                        <td>No</td>
+                        <td>Mrs. Johnson</td>
+                        <td>Family Visit</td>
+                        <td>None</td>
+                        <td><input type="checkbox" name="securityOut2"></td>
+                    </tr>
+                    <tr>
+                        <td>2023-10-03</td>
+                        <td>09:00 AM</td>
+                        <td>01:00 PM</td>
+                        <td>Yes</td>
+                        <td>Mr. Brown</td>
+                        <td>Personal Errand</td>
+                        <td>None</td>
+                        <td><input type="checkbox" name="securityOut3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        &copy; 2023 Outpass Management System
+    </footer>
+</body>
+</html>
